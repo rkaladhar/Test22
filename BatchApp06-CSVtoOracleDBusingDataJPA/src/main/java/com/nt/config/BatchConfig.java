@@ -41,6 +41,7 @@ public class BatchConfig {
 	//processor
 	@Bean
 	public  ExamResultItemProcessor createProcessor() {
+		System.out.println("11111111111");
 		return  new  ExamResultItemProcessor();
 	}
 	
