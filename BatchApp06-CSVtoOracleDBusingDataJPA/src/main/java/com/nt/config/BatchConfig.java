@@ -65,6 +65,7 @@ public class BatchConfig {
 	//reader
 	@Bean
 	public  FlatFileItemReader<IExamResult> createReader(){
+		System.out.println("FlatFileItemReader<IExamResult> createReader----------------->");
 	     return  new FlatFileItemReaderBuilder<IExamResult>()
 	    		        .name("csv-reader")
 	    		        .resource(new FileSystemResource("e:/csvs/TopBrains.csv"))
